@@ -13,4 +13,9 @@ packages=(
 flatpak install --noninteractive flathub ${packages[@]}
 
 flatpak override --user --env=OBSIDIAN_USE_WAYLAND=1 md.obsidian.Obsidian
-flatpak override --user nz.mega.MEGAsync --filesystem=$HOME/xdg
+flatpak override --user \
+    --filesystem=~/cloud \
+    --nofilesystem=~/MEGA \
+    --nofilesystem=~/MEGAsync \
+    --nofilesystem="~/MEGAsync Downloads" \
+    nz.mega.MEGAsync

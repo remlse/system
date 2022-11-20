@@ -28,7 +28,10 @@ install_extension() {
 install_extension "hidetopbar" "mathieu.bidon.ca" "109"
 install_extension "emoji-selector" "maestroschan.fr" "23"
 
-dconf write /org/gnome/shell/enabled-extensions "['emoji-selector@maestroschan.fr', 'hidetopbar@mathieu.bidon.ca']"
+dconf write /org/gnome/shell/enabled-extensions "[
+    'emoji-selector@maestroschan.fr',
+    'hidetopbar@mathieu.bidon.ca'
+    ]"
 
 # hidetopbar settings
 dconf write /org/gnome/shell/extensions/hidetopbar/enable-intellihide false

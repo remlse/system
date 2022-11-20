@@ -1,7 +1,5 @@
 #!/bin/bash
 
-git_repos=$HOME/dotfiles/setup/git_repos
-
 echo "Making sure git repos are cloned and setup..."
 
 export GIT_SSH_COMMAND="ssh -o StrictHostKeyChecking=accept-new"

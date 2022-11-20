@@ -3,7 +3,7 @@
 echo "Performing system update..."
 sudo dnf update -yq
 
-install=$HOME/dotfiles/setup/install
+install=$HOME/repos/system/setup/install
 
 $install/dnf_conf.sh
 $install/dnf_repos.sh

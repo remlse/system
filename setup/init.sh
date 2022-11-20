@@ -33,14 +33,13 @@ fetch_ssh_key() {
 }
 fetch_ssh_key
 
-echo "Cloning the dotfiles repo..."
+echo "Cloning the system repo..."
 export GIT_SSH_COMMAND="ssh -o StrictHostKeyChecking=accept-new"
 : ${GIT_HOST=github.com}
-git clone "git@$GIT_HOST:remlse/dotfiles" $HOME/dotfiles > /dev/null
-git config --file $HOME/dotfiles/.git/config include.path ../.gitconfig
+git clone --recursive "git@$GIT_HOST:remlse/system" $HOME/repos/system > /dev/null
 
 echo "Copying dotfiles to home directory..."
-git --git-dir=$HOME/dotfiles/.git --work-tree=$HOME reset --hard > /dev/null
+git --git-dir=$HOME/repos/system/dotfiles/.git --work-tree=$HOME reset --hard > /dev/null
 
 # ssh config MUST have those permissions exactly,
 # but git only tracks executable bit of owner

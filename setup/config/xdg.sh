@@ -17,7 +17,7 @@ for old_dir in "${old_dirs[@]}"; do
     [ -d $HOME/$old_dir ] && rmdir $HOME/$old_dir
 done
 
-[ -d $HOME/xdg ] || mkdir $HOME/xdg
+[ -d $HOME/cloud ] || mkdir $HOME/cloud
 
 new_dirs=(
     desktop
@@ -31,7 +31,7 @@ new_dirs=(
 )
 
 for new_dir in "${new_dirs[@]}"; do
-    [ -d $HOME/xdg/$new_dir ] || mkdir $HOME/xdg/$new_dir
+    [ -d $HOME/cloud/$new_dir ] || mkdir $HOME/cloud/$new_dir
 done
 
 # downloads folder is separate so it won't be synced

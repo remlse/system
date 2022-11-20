@@ -1,6 +1,6 @@
 #!/bin/bash
 
-config=$HOME/dotfiles/setup/config
+config=$HOME/repos/system/setup/config
 
 $config/zsh.sh
 $config/hostname.sh
