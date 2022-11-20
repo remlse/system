@@ -3,7 +3,7 @@
 configure=$HOME/repos/system/setup/configure
 
 $configure/zsh.sh
-$configure/hostname.sh
+$configure/hosts.sh
 
 $configure/gsettings.sh
 $configure/xdg.sh

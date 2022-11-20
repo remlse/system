@@ -1,5 +1,13 @@
 #!/bin/bash
 
+# set hostname
+if [ "$(hostname)" = "fedora" ]
+then
+    echo "Enter a new hostname:"
+    read new_hostname
+    hostnamectl set-hostname $new_hostname
+fi
+
 echo "Installing git, node and Bitwarden CLI..."
 sudo dnf install -yq git nodejs
 command -v bw > /dev/null || sudo npm install -g @bitwarden/cli
