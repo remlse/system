@@ -46,8 +46,8 @@ git --git-dir=$HOME/repos/system/dotfiles/.git --work-tree=$HOME reset --hard > 
 [ -f $HOME/.ssh/config ] && chmod 600 $HOME/.ssh/config
 
 echo "Installing nushell..."
-sudo dnf copr enable -y
-sudo dnf install nushell
+sudo dnf copr enable -y atim/nushell
+sudo dnf install -yq nushell
 
 # continue with regular setup
 $HOME/dotfiles/setup/main.nu
