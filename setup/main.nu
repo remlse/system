@@ -1,6 +1,6 @@
 #!/usr/bin/env nu
 
-cd $'($env.HOME)/dotfiles/setup'
+cd $'($env.HOME)/repos/system/setup'
 
 ./install/main.sh
 

@@ -50,5 +50,5 @@ sudo dnf copr enable -y atim/nushell
 sudo dnf install -yq nushell
 
 # continue with regular setup
-$HOME/dotfiles/setup/main.nu
+$HOME/repos/system/setup/main.nu
 echo "The system setup is done. Consider rebooting."
