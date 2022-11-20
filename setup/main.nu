@@ -6,6 +6,6 @@ cd $'($env.HOME)/repos/system/setup'
 
 ./hardware.sh
 
-./config/main.sh
+./configure/main.sh
 
 ./git_repos.sh
