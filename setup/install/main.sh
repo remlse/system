@@ -9,5 +9,5 @@ $install/dnf_conf.sh
 $install/dnf_repos.sh
 $install/dnf_install.sh
 $install/flathub.sh
-$install/bin.sh
 $install/rust.sh
+$install/bin.sh

@@ -33,6 +33,6 @@ copr_repos=(
 for copr_repo in ${copr_repos[@]}
 do
     if ! dnf repolist | grep $(basename $copr_repo) &> /dev/null ; then
-        sudo dnf copr enable $copr_repo -y
+        sudo dnf copr enable -yq $copr_repo
     fi
 done

@@ -16,6 +16,8 @@ then
     rm x86_64-unknown-linux-gnu.tar.gz
 fi
 
+[ -d $HOME/.local/bin ] || mkdir $HOME/.local/bin
+
 if ! [ -f $HOME/.local/bin/difft ]
 then
     wget -q https://github.com/Wilfred/difftastic/releases/download/0.38.0/difft-x86_64-unknown-linux-gnu.tar.gz
