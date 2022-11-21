@@ -3,11 +3,11 @@
 echo "Performing system update..."
 sudo dnf update -yq
 
-install=$HOME/repos/system/setup/install
+cd $'($env.HOME)/repos/system/setup/install'
 
-$install/dnf_conf.sh
-$install/dnf_repos.sh
-$install/dnf_install.sh
-$install/flathub.sh
-$install/rust.sh
-$install/bin.sh
+./dnf_conf.sh
+./dnf_repos.sh
+./dnf_install.sh
+./flathub.sh
+./rust.sh
+./bin.nu
