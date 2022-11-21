@@ -4,7 +4,7 @@ echo "Making sure nerd fonts are installed..."
 
 if ! [ -d /usr/share/fonts/roboto_mono ]; then
     wget -q "https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/RobotoMono.zip"
-    sudo unzip -q RobotoMono.zip -d /usr/share/fonts/roboto_mono
+    sudo unzip -q RobotoMono.zip -d /usr/share/fonts/roboto_mono &> /dev/null
     rm RobotoMono.zip
     sudo fc-cache -v
 fi
