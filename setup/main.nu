@@ -2,7 +2,7 @@
 
 cd $'($env.HOME)/repos/system/setup'
 
-./install/main.sh
+./install/main.nu
 
 ./hardware.sh
 

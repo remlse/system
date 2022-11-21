@@ -1,6 +1,6 @@
-#!/bin/bash
+#!/usr/bin/env nu
 
-echo "Performing system update..."
+echo 'Performing system update...'
 sudo dnf update -yq
 
 cd $'($env.HOME)/repos/system/setup/install'
@@ -11,7 +11,6 @@ cd $'($env.HOME)/repos/system/setup/install'
 ./rust.sh
 ./bin.nu
 
-if [ -z ${HEADLESS+x} ]
-then
+if not ('HEADLESS' in (env).name) {
     ./flathub.sh
-fi
+}
