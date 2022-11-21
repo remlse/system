@@ -9,7 +9,7 @@ let repos = [
     git@github.com:remlse/exercism
     git@github.com:remlse/buenzlimarks
     git@github.com:remlse/cargo-templates
-    git@github.zhaw.ch:senekrem/zhaw.git
+    git@github.zhaw.ch:senekrem/zhaw
     ssh://git@git.jetbrains.space/paton/paton/ec-bell
 ]
 
