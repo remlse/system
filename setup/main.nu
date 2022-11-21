@@ -8,4 +8,4 @@ cd $'($env.HOME)/repos/system/setup'
 
 ./configure/main.sh
 
-./git_repos.sh
+./git_repos.nu
