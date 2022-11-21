@@ -13,7 +13,7 @@ cd $HOME/repos/system/setup/configure
 
 if [ -z ${HEADLESS+x} ]
 then
-    ./firefox.sh
+    ./firefox.nu
     ./gsettings.sh
     ./vscode.sh
     ./gnome_ext.sh
