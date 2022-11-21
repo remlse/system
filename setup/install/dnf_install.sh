@@ -31,7 +31,6 @@ packages=(
     neovim
     micro wl-clipboard
     helix
-    code
 
     # terminal, prompt, shell
     alacritty
@@ -52,3 +51,8 @@ packages=(
 )
 
 sudo dnf install -yq ${packages[@]}
+
+if [ -z ${HEADLESS+x} ]
+then
+    sudo dnf install -yq code
+fi

@@ -8,7 +8,14 @@ Setup everything by running:
 source <(curl https://setup.remlse.dev)
 ```
 
-The following environment variables may be used for customization:
+Set the env variable `HEADLESS` to skip and GUI related stuff (e.g. for server):
+
+```sh
+export HEADLESS=true
+source <(curl https://setup.remlse.dev)
+```
+
+The following environment variables may be used to target a fork:
 
 ```sh
 export BW_EMAIL=user@domain

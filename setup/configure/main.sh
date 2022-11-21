@@ -1,19 +1,23 @@
 #!/bin/bash
 
-configure=$HOME/repos/system/setup/configure
+cd $HOME/repos/system/setup/configure
 
-$configure/zsh.sh
-$configure/hosts.sh
+./zsh.sh
+./hosts.sh
 
-$configure/gsettings.sh
-$configure/xdg.sh
-$configure/firefox.sh
+./xdg.sh
 
-$configure/docker.sh
-$configure/vscode.sh
-$configure/nerd_font.sh
-$configure/gnome_ext.sh
-$configure/zsa.sh
+./docker.sh
+./nerd_font.sh
+./zsa.sh
+
+if [ -z ${HEADLESS+x} ]
+then
+    ./firefox.sh
+    ./gsettings.sh
+    ./vscode.sh
+    ./gnome_ext.sh
+fi
 
 if ! [ -f /etc/profile.d/gopath.sh ]
 then
