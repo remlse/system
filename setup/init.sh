@@ -57,6 +57,11 @@ echo "Installing nushell..."
 sudo dnf copr enable -y atim/nushell
 sudo dnf install -yq nushell
 
-# continue with regular setup
-$HOME/repos/system/setup/main.nu
-echo "The system setup is done. Consider rebooting."
+if [ -z ${INIT_ONLY+x} ]
+then
+    # continue with regular setup
+    $HOME/repos/system/setup/main.nu
+    echo "The system setup is done. Consider rebooting."
+else
+    echo "Initialization done. Continue manually."
+fi

@@ -8,16 +8,20 @@ Setup everything by running:
 source <(curl https://setup.remlse.dev)
 ```
 
-Set the env variable `HEADLESS` to skip and GUI related stuff (e.g. for server):
+Use these environment variables to modify some aspect of the setup scripts:
+
+| Name        | Effect if set                                               |
+| ----------- | ----------------------------------------------------------- |
+| `INIT_ONLY` | Only get ssh key and clone the system repo.                 |
+| `HEADLESS`  | Skip GUI stuff, e.g. installation of VS Code.               |
+| `BW_EMAIL`  | Use to target fork, set to bitwarden account email address. |
+| `GIT_HOST`  | Use to target fork, set to host domain of the fork.         |
+
+(Nonsensical) example:
 
 ```sh
+export INIT_ONLY=true
 export HEADLESS=true
-source <(curl https://setup.remlse.dev)
-```
-
-The following environment variables may be used to target a fork:
-
-```sh
 export BW_EMAIL=user@domain
 export GIT_HOST=github.com
 source <(curl https://setup.remlse.dev)
@@ -34,6 +38,8 @@ source <(curl https://setup.remlse.dev)
     - Undo Close Tab
     - Downloads
 - MEGA sync
+
+# TODO: this is out of date.
 
 ## How to create a fork
 
