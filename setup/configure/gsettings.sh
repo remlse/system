@@ -24,6 +24,8 @@ gsettings set org.gnome.desktop.session idle-delay 900
 gsettings set org.gnome.settings-daemon.plugins.power idle-dim false
 gsettings set org.gnome.settings-daemon.plugins.power ambient-enabled false
 
+gsettings set org.gnome.settings-daemon.plugins.power power-button-action 'suspend'
+
 ######## displays ########
 
 # enable fractional scaling
