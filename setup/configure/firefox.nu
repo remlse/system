@@ -67,6 +67,7 @@ if not ('/etc/firefox/policies/policies.json' | path exists) {
 
   echo 'Setting Firefox policies...'
 
+  sudo mkdir /etc/firefox/policies
   sudo sh -c $"echo '($policies | to json)' > /etc/firefox/policies/policies.json"
 }
 
