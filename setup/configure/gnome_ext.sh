@@ -25,15 +25,14 @@ install_extension() {
     rm "$file_name"
 }
 
-install_extension "hidetopbar" "mathieu.bidon.ca" "109"
+# install_extension "hidetopbar" "mathieu.bidon.ca" "110"
 install_extension "emoji-selector" "maestroschan.fr" "23"
 
 dconf write /org/gnome/shell/enabled-extensions "[
-    'emoji-selector@maestroschan.fr',
-    'hidetopbar@mathieu.bidon.ca'
+    'emoji-selector@maestroschan.fr'
     ]"
 
 # hidetopbar settings
-dconf write /org/gnome/shell/extensions/hidetopbar/enable-intellihide false
-dconf write /org/gnome/shell/extensions/hidetopbar/enable-active-window false
-dconf write /org/gnome/shell/extensions/hidetopbar/hot-corner true
+# dconf write /org/gnome/shell/extensions/hidetopbar/enable-intellihide false
+# dconf write /org/gnome/shell/extensions/hidetopbar/enable-active-window false
+# dconf write /org/gnome/shell/extensions/hidetopbar/hot-corner true
