@@ -7,7 +7,7 @@ gsettings set org.gnome.desktop.interface color-scheme "prefer-dark"
 gsettings set org.gnome.desktop.interface gtk-theme "Adwaita-dark"
 
 # wallpaper
-wallpaper="file://$HOME/cloud/pictures/f34_wallpaper.jpg"
+wallpaper="$HOME/.config/background"
 gsettings set org.gnome.desktop.background picture-uri $wallpaper
 gsettings set org.gnome.desktop.background picture-uri-dark $wallpaper
 
