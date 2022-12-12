@@ -47,6 +47,7 @@ packages=(
     ripgrep
     lazygit
     just
+    gh
     # TODO zoxide
 )
 
