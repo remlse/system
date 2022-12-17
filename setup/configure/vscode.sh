@@ -26,7 +26,7 @@ extensions=(
 
     # config & markup languages
     ms-azuretools.vscode-docker
-    bungcip.better-toml
+    tamasfe.even-better-toml
     richie5um2.vscode-sort-json
     kokakiwi.vscode-just
 )
