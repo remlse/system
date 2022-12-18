@@ -33,7 +33,7 @@ gsettings set org.gnome.mutter experimental-features "['scale-monitor-framebuffe
 
 # extreme night light
 gsettings set org.gnome.settings-daemon.plugins.color night-light-enabled true
-gsettings set org.gnome.settings-daemon.plugins.color night-light-temperature "uint32 1700"
+gsettings set org.gnome.settings-daemon.plugins.color night-light-temperature "uint32 2200"
 gsettings set org.gnome.settings-daemon.plugins.color night-light-schedule-automatic false
 gsettings set org.gnome.settings-daemon.plugins.color night-light-schedule-from 19.0
 gsettings set org.gnome.settings-daemon.plugins.color night-light-schedule-to 3.0
