@@ -24,7 +24,7 @@ if ($'($env.HOME)/.cargo/bin/cargo-nextest' | path exists | not $in) {
 
 mkdir $'($env.HOME)/.local/bin'
 
-if ($'($env.HOME)/.local/bin/difft' | path exists | not $in) && $arch == x86_64 {
+if ($'($env.HOME)/.local/bin/difft' | path exists | not $in) and $arch == x86_64 {
 
     let version = '0.38.0'
     let filename = $'difft-($arch)-unknown-linux-gnu.tar.gz'
